@@ -1,38 +1,186 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 32px;
+}
+
+.nav {
+  display: none;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  margin-left: 24px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.support-button {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 16px;
+}
+
+.hero {
+  background-color: #f8f9fa;
+  padding: 48px 0;
+}
+
+.news-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.news-text h1 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.news-text p {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.read-more {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.news-image img {
+  width: 100%;
+  height: auto;
+  margin-top: 24px;
+}
+
+.latest-analysis {
+  padding: 48px 0;
+}
+
+.latest-analysis h2 {
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+.analysis-grid {
+  display: grid;
+  gap: 32px;
+}
+
+.analysis-card {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.analysis-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 24px;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.footer {
+  background-color: #333;
   color: white;
+  padding: 48px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.footer-grid {
+  display: grid;
+  gap: 32px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
   }
-  to {
-    transform: rotate(360deg);
+
+  .menu-icon {
+    display: none;
+  }
+
+  .hero-content {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hero-text {
+    flex: 2;
+    padding-right: 48px;
+  }
+
+  .hero-image {
+    flex: 1;
+  }
+
+  .analysis-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
