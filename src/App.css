@@ -56,7 +56,7 @@ body {
   margin-left: 16px;
 }
 
-.hero {
+.news {
   background-color: #f8f9fa;
   padding: 48px 0;
 }
@@ -162,17 +162,17 @@ body {
     display: none;
   }
 
-  .hero-content {
+  .news-content {
     flex-direction: row;
     align-items: center;
   }
 
-  .hero-text {
+  .news-text {
     flex: 2;
     padding-right: 48px;
   }
 
-  .hero-image {
+  .news-image {
     flex: 1;
   }
 
