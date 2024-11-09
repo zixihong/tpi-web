@@ -4,8 +4,9 @@ import './App.css';
 const Header = () => (
   <header className="header">
     <div className="container">
-      <img src="/api/placeholder/150/50" alt="TPI Logo" className="logo" />
+      <img src="logos/TPI.png" alt="TPI Logo" className="logo" />
       <nav className="nav">
+        
         <a href="#" className="nav-link">About TPI</a>
         <a href="#" className="nav-link">Research</a>
         <a href="#" className="nav-link">Events</a>
@@ -13,7 +14,7 @@ const Header = () => (
         <a href="#" className="nav-link">Membership</a>
       </nav>
       <div className="header-actions">
-        <button className="support-button">Support TPI</button>
+        <button className="support-button">Early Registration</button>
         <svg xmlns="http://www.w3.org/2000/svg" className="icon search-icon" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
         </svg>
@@ -25,17 +26,17 @@ const Header = () => (
   </header>
 );
 
+
 const News = () => (
   <section className="news">
     <div className="container">
       <div className="news-content">
         <div className="news-text">
-          <h1>X</h1>
+          <h1>Some cool article that u should read will go here in a month</h1>
           <p></p>
-          <a href="#" className="read-more">Read More</a>
         </div>
         <div className="news-image">
-          <img src="/api/placeholder/400/300" alt="Featured" />
+          <img src="" alt="Featured" />
         </div>
       </div>
     </div>
@@ -47,13 +48,13 @@ const LatestAnalysis = () => (
     <div className="container">
       <h2>Latest Analysis</h2>
       <div className="analysis-grid">
-        {[1, 2, 3].map((item) => (
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item) => (
           <div key={item} className="analysis-card">
             <img src={`/api/placeholder/400/200`} alt="whatever" />
             <div className="card-content">
               <h3> {item}</h3>
               <p></p>
-              <a href="#" className="read-more">Read More</a>
+              <a href="#" className="read-more">Read</a>
             </div>
           </div>
         ))}
@@ -67,31 +68,28 @@ const Footer = () => (
     <div className="container">
       <div className="footer-grid">
         <div className="footer-section">
-          <h3>About TPI</h3>
           <ul>
-            <li><a href="#">Mission</a></li>
-            <li><a href="#">x</a></li>
-            <li><a href="#">x</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Cookie Settings</a></li>
           </ul>
         </div>
         <div className="footer-section">
-          <h3>x</h3>
           <ul>
-            <li><a href="#">x</a></li>
-            <li><a href="#">x</a></li>
-            <li><a href="#">x</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Privacy Policy</a></li>
           </ul>
         </div>
         <div className="footer-section">
-          <h3>x</h3>
           <ul>
-            <li><a href="#">x</a></li>
-            <li><a href="#">x</a></li>
-            <li><a href="#">x</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms of Service</a></li>
           </ul>
         </div>
         <div className="footer-section">
-          <h3>Connect with The Pranav Institute</h3>
+          <p>&copy; 2024 The Pranav Institute</p>
+          <img src='logos/The Pranav Institute.png' alt = 'TPI Logo Longer' className = 'footer-logo'
+            height={45}
+          ></img>
           <div className="social-icons">
           </div>
         </div>
