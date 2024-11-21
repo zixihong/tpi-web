@@ -188,7 +188,7 @@ export const PeoplePage = () => {
                   lineHeight: '1.6',
                   color: 'var(--text-color)'
                 }}>
-                  Howdy! I'm Bryan. I am currently a student at the University of California - Santa Barbara on scholarship. My diverse experiences in urban planning, bioinformatics, and public health reflect my curiosity and creativity in seeking unique solutions to complex challenges. At the intersection of these fields lies my passion for Machine Learning, Deep Learning, Computer Vision, and Data Analysis. I thrive on tackling difficult problems and love the process of exploring innovative approaches to achieve impactful results. Feel free to check out some of my personal and research projects in the link in my bio!
+                  Howdy! I'm Bryan. I am currently a student at the University of California - Santa Barbara studying computer science & math. As the Chief Technology Officer at The Pranav Institute, I manage our web development and digital infrastructure and enjoy working with different tech-stacks. Beyond just managing our website, I'm also leading several exciting technological initiatives at TPI that will revolutionize how we analyze and present data in international relations and policy research that will be released later down the line. I thrive on tackling difficult problems and love the process of exploring innovative approaches to achieve impactful results.
                 </p>
               </div>
             </div>
